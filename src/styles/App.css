@@ -1,0 +1,80 @@
+.mainContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #edf2f4;
+  align-items: center;
+}
+
+.inputContainer {
+  /* height: 200px; */
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid black;
+}
+.inputForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.textInput {
+  min-width: 500px;
+  max-width: 300px;
+  min-height: 50px;
+  height: 100%;
+  width: 100%;
+}
+.resultContainer {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 100%;
+}
+.taskDescriptionContainer {
+  padding: 10px;
+  height: 100%;
+  width: 300px;
+}
+.planContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.stepsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-left: 1px dotted black;
+  border-bottom: 1px dotted black;
+  width: 100%;
+  height: 50%;
+}
+#stepsTitle {
+  width: 200px;
+}
+#stepList {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  gap: 10px;
+}
+#recommendationTitle {
+  width: 200px;
+}
+.recommendationContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  height: 50%;
+  align-items: center;
+  border-left: 1px dotted black;
+  overflow: scroll;
+}

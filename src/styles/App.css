@@ -1,4 +1,4 @@
-.mainContainer {
+#mainContainer {
   height: 100%;
   width: 100%;
   display: flex;
@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.inputContainer {
+#taskContainer {
   /* height: 200px; */
   width: 100%;
   padding: 10px;
@@ -17,23 +17,41 @@
   justify-content: flex-end;
   border-bottom: 1px solid black;
 }
-.inputForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-.textInput {
-  min-width: 500px;
-  max-width: 300px;
-  min-height: 50px;
-  height: 100%;
-  width: 100%;
-}
-.resultContainer {
+
+#resultContainer {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
+  width: 100%;
+}
+#chatContainer {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 10px;
+}
+#chatHistory {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow: auto;
+}
+#chatInput {
+  margin-top: 30px;
+  height: 200px;
+}
+#inputForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+}
+#textInput {
+  min-width: 200px;
+  max-width: 250px;
+  min-height: 100px;
+  height: 100%;
   width: 100%;
 }
 .taskDescriptionContainer {
@@ -58,12 +76,22 @@
 #stepsTitle {
   width: 200px;
 }
-#stepList {
+#stepListHistory {
+  background-color: antiquewhite;
+  flex-grow: 2;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#stepListHistory > .stepList {
   flex-grow: 1;
   display: flex;
   flex-direction: row;
-  overflow: scroll;
+  overflow: auto;
   gap: 10px;
+  justify-content: flex-start;
 }
 #recommendationTitle {
   width: 200px;

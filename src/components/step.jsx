@@ -4,10 +4,22 @@ function Step({ stepInfo, stepIndex }) {
   return (
     <div className="stepMain">
       <h5>Step {stepIndex}</h5>
-      <div>description：{stepInfo.description}</div>
-      <div>explanation：{stepInfo.explanation}</div>
-      <div>sub query：{stepInfo.sub_query}</div>
-      {/* <div>推荐工具：{stepInfo.suggested_tool}</div> */}
+      <div>
+        <p className="categoryWord">description:</p>
+        {stepInfo.description}
+      </div>
+      <div>
+        <p className="categoryWord">explanation:</p>
+        {stepInfo.explanation}
+      </div>
+      <div>
+        <p className="categoryWord">sub query:</p>
+        {stepInfo.sub_query}
+      </div>
+      <div>
+        <p className="categoryWord">tool:</p>
+        {stepInfo.suggested_tool}
+      </div>
     </div>
   );
 }
